@@ -1,5 +1,4 @@
 
-
 main {
   max-width: 900px;
 }
@@ -13,14 +12,14 @@ header#portfolio-header {
 }
 
 h1 {
-  color: hsla(349, 100%, 44%, 0.9);
+  color: hsla(120, 3%, 16%, 0.9);
   font-weight: bold;
 }
 
 #slogan {
-  color: hsla(349, 100%, 44%, 0.9);
+  color: hsla(120, 3%, 16%, 0.65);
   font-weight: lighter;
-  font-size: 1.6rem;
+  font-size: 2.6rem;
 }
 
 .project-description {
