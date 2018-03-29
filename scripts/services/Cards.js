@@ -35,7 +35,7 @@
        description: 'A Wikipedia clone created with Ruby on Rails. Implementing using test driven design.',
        images: [
          { id: 1, description: 'Home Page', imgUrl: '/blocipedia/homePage.png' },
-         { id: 2, description: 'User Sign In', imgUrl: '/blocipedia/userSignin.png' },
+         { id: 2, description: 'User Sign In', imgUrl: '/blocipedia/userSignIn.png' },
          { id: 3, description: 'Wiki Listing', imgUrl: '/blocipedia/wikisList.png' }
        ]
     };

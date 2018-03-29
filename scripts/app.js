@@ -6,14 +6,17 @@ $( document ).ready(function(){
 
   console.log("helloTest");
 
-  $('#enter-btn').click(function(){
-    //un-hide main section
-    $("main").removeClass("hidden");
+    $('#enter-btn').click(function(){
+      //un-hide main section
+      $("main").removeClass("hidden");
+      //slide up header
+      $("#portfolio-header").slideUp("slow");
 
-    //slide up header
-    $("#portfolio-header").slideUp("slow");
+    });
 
-  });
+    $(".project").click(function(){
+      $("#featured-main").removeClass("hidden");
+    });
 
 });
 
