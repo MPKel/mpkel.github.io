@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="mdl-js">
+<html class="mdl-js" ng-app="portMK">
   <head>
     <title>Portfolio | Michael Kelley</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,8 +19,8 @@
 
 
 
-  <body>
-    <div id="smokt"></div>
+  <body ng-controller="HomeCtrl as home">
+
     <header id="portfolio-header" class="mdl-layout__header mdl-layout__header--transparent">
       <h1>Michael Kelley</h1>
       <p id="slogan">Web Developer</p>
@@ -36,42 +36,84 @@
 
       <div class="project featured-project mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
          <div class="mdl-card__media mdl-cell mdl-cell--5-col mdl-cell--12-col-tablet">
-           <img src="images/pong/gameOver.png" alt="Pong: game over"/>
+
+           <!-- Slideshow container -->
+              <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade" ng-repeat="img in home.featImages track by $index">
+                  <div class="numbertext">{{img.id}} / {{img.count}}</div>
+                  <img ng-src="images{{img.imgUrl}}" style="width:100%">
+                  <div class="text">{{img.description}}</div>
+                </div>
+
+                <!-- <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="images/pong/gameOn.png" style="width:100%">
+                  <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="images/pong/gameOver.png" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div> -->
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
          </div>
          <div class="mdl-cell mdl-cell--7-col">
-          <h2 class="mdl-card__title-text">Pong </h2>
-          <p class="project-description mdl-card__supporting-text">A recreation of the classic arcade game pong. Animated entirely with the HTML5 canvas element and JavaScript</p>
+          <h2 class="mdl-card__title-text">{{home.featTitle}} </h2>
+          <p class="project-description mdl-card__supporting-text">{{home.featDescription}}</p>
       </div>
 
 
-      <div class="project mdl-cell mdl-card mdl-shadow--4dp">
+
+
+
+      <div class="project mdl-cell mdl-card mdl-shadow--4dp" ng-click="home.getCard('1')">
+        <div class="mdl-card__media">
+          <img src="images/pong/gameOver.png" alt="Pong: game over" />
+        </div>
+        <div class="mdl-card__title">
+          <h2 class="mdl-card__title-text">Pong</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+          <p>A recreation of the classic arcade game pong. Animated entirely with the HTML5 canvas element and JavaScript</p>
+         </div>
+      </div>
+
+      <div class="project mdl-cell mdl-card mdl-shadow--4dp" ng-click="home.getCard(2)">
         <div class="mdl-card__media">
           <img src="images/pomTimer/pomTimerBreak.png" alt="Pomodoro Timer"/>
         </div>
         <div class="mdl-card__title">
           <h2 class="mdl-card__title-text">Pomodoro Timer</h2>
         </div>
-        <div class="mdl-card__supporting-text">
-          <p>App designed to icnrease
-          productivity by utilizing the Pomodoro time management technique of alternating timed work sessions and breaks.
-          Users will receive alerts at the end of a session, and can add/remove and sort completed tasks.</p>
-          <p>Created using AngularJS with FireBase</p>
-         </div>
       </div>
 
       <div class="project mdl-cell mdl-card mdl-shadow--4dp">
         <div class="mdl-card__media">
-          <img src="images/dragonChat/inRoomChat.png" alt="Dragon Chat"/>
+          <img src="images/dragonChat/inRoomChat.png" alt="Dragon Chat" ng-click="home.getCard('3')"/>
         </div>
         <div class="mdl-card__title">
           <h2 class="mdl-card__title-text">Dragon Chat</h2>
         </div>
-        <div class="mdl-card__supporting-text">A real time chat application created with AngularJS and FireBase.</div>
       </div>
 
       <div class="project mdl-cell mdl-card mdl-shadow--4dp">
         <div class="mdl-card__media">
-          <img src="images/blocipedia/wikisList.png" alt="Blocipedia Wiki Listing"/>
+          <img src="images/blocipedia/wikisList.png" alt="Blocipedia Wiki Listing" ng-click="home.getCard('4')"/>
         </div>
         <div class="mdl-card__title">
           <h2 class="mdl-card__title-text">Blocipedia</h2>
@@ -116,8 +158,10 @@
 	</ul>
 
     </footer>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/HomeCtrl.js"></script>
+    <script src="scripts/services/Cards.js"></script>
   </body>
 </html>
