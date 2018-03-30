@@ -3,8 +3,7 @@ $( document ).ready(function(){
 
   // $("#smokt").animate({left: '100%'}, 10000);
   // $("#smokt").animate({left: '0%'}, 10000);
-
-  console.log("helloTest");
+  var hidden = true;
 
     $('#enter-btn').click(function(){
       //un-hide main section
@@ -15,7 +14,14 @@ $( document ).ready(function(){
     });
 
     $(".project").click(function(){
-      $("#featured-main").removeClass("hidden");
+      if(hidden){
+      $("#featured-main").slideDown("slow");
+      $("#featured-main").animate({opacity: '1'}, 'slow');
+      hidden = false;
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
     });
 
 });
@@ -43,11 +49,11 @@ function showSlides(n) {
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
+  // for (i = 0; i < dots.length; i++) {
+  //     dots[i].className = dots[i].className.replace(" active", "");
+  // }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  // dots[slideIndex-1].className += " active";
 }
 
 
