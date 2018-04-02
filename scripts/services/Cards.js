@@ -6,8 +6,8 @@
        title: 'Pong',
        description: 'A recreation of the classic arcade game pong. Animated entirely with the HTML5 canvas element and JavaScript',
        images: [
-         { id: 1, description: 'GameOver', imgUrl: '/pong/gameOver.png' },
-         { id: 2, description: 'GameOn', imgUrl: '/pong/gameOn.png' }
+         { id: 1, description: 'GameOver', imgUrl: 'images/pong/gameOver.png' },
+         { id: 2, description: 'GameOn', imgUrl: 'images/pong/gameOn.png' }
        ]
     };
 
@@ -15,8 +15,8 @@
        title: 'Pomodoro Timer',
        description: 'App designed to icnrease productivity by utilizing the Pomodoro time management technique of alternating timed work sessions and breaks. Users receive alerts at the end of a session, and can add/remove and sort completed tasks. Created using AngularJS with FireBase.',
        images: [
-         { id: 1, description: 'break', imgUrl: '/pomTimer/pomTimerBreak.png' },
-         { id: 2, description: 'home', imgUrl: '/pomTimer/pomTimerHome.png' }
+         { id: 1, description: 'break', imgUrl: 'images/pomTimer/pomTimerBreak.png' },
+         { id: 2, description: 'home', imgUrl: 'images/pomTimer/pomTimerHome.png' }
        ]
     };
 
@@ -24,9 +24,9 @@
        title: 'Dragon Chat',
        description: 'A real time chat application created with AngularJS and FireBase.',
        images: [
-         { id: 1, description: 'Room', imgUrl: '/dragonChat/inRoomChat.png' },
-         { id: 2, description: 'New Room', imgUrl: '/dragonChat/newRoomModal.png' },
-         { id: 3, description: 'New User', imgUrl: '/dragonChat/newUser.png' }
+         { id: 1, description: 'Room', imgUrl: 'images/dragonChat/inRoomChat.png' },
+         { id: 2, description: 'New Room', imgUrl: 'images/dragonChat/newRoomModal.png' },
+         { id: 3, description: 'New User', imgUrl: 'images/dragonChat/newUser.png' }
        ]
     };
 
@@ -34,9 +34,9 @@
        title: 'Blocipedia',
        description: 'A Wikipedia clone created with Ruby on Rails. Implementing using test driven design.',
        images: [
-         { id: 1, description: 'Home Page', imgUrl: '/blocipedia/homePage.png' },
-         { id: 2, description: 'User Sign In', imgUrl: '/blocipedia/userSignIn.png' },
-         { id: 3, description: 'Wiki Listing', imgUrl: '/blocipedia/wikisList.png' }
+         { id: 1, description: 'Home Page', imgUrl: 'images/blocipedia/homePage.png' },
+         { id: 2, description: 'User Sign In', imgUrl: 'images/blocipedia/userSignIn.png' },
+         { id: 3, description: 'Wiki Listing', imgUrl: 'images/blocipedia/wikisList.png' }
        ]
     };
 
