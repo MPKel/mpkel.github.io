@@ -61,5 +61,5 @@ function showSlides(n) {
 (function() {
 
     angular
-        .module('portMK', []);
+        .module('portMK', ['ui.bootstrap']);
 })();

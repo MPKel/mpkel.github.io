@@ -1,0 +1,8 @@
+.feat-image-modal {
+  width: 80%;
+  height: 80;
+  text-align: center;
+  justify-content: center;
+  background-color: black;
+  opacity: 0.75;
+}
