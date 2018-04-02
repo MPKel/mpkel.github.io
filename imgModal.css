@@ -1,6 +1,6 @@
 .feat-image-modal {
   width: 80%;
-  height: 80%;
+  height: 60%;
   text-align: center;
   justify-content: center;
   background-color: black;
@@ -10,4 +10,16 @@
   border: 3px solid white;
   left: 10%;
   top: 5%;
+}
+
+.modal-container {
+  height: 90%;
+  width: 90%;
+  background-color: black;
+  opacity: 1;
+}
+
+.modal-img {
+  height: 90%;
+  width: 90%;
 }
