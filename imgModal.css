@@ -4,7 +4,6 @@
   text-align: center;
   justify-content: center;
   background-color: black;
-  opacity: 0.75;
   position: fixed;
   z-index: 500;
   border: 3px solid white;
@@ -12,7 +11,7 @@
   top: 5%;
 }
 
-.modal-container {
+.modal-body {
   height: 90%;
   width: 90%;
   background-color: black;
@@ -22,6 +21,16 @@
 }
 
 .modal-img {
-  height: 90%;
-  width: 90%;
+  height:inherit;
+  width: inherit;
+}
+
+.modal-close {
+  height: 10px;
+  width: 10px;
+  position: fixed;
+  top: 0px;
+  right: 10px;
+  background-color: red;
+  color: white;
 }

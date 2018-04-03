@@ -43,11 +43,7 @@ h1 {
   display: none;
 }
 
-.feat-img {
-  width: 450px;
-  height: 300px;
-  border: 2px solid gray;
-}
+
 
 .showIt:hover {
   box-shadow: 2px 2px 2px black;
@@ -85,6 +81,34 @@ h1 {
 
 }
 
+.feat-img {
+  width: 450px;
+  height: 300px;
+  border: 2px solid gray;
+}
+
+.ss-docket {
+  float: left;
+  background-color: lightblue;
+  justify-content: center;
+}
+
+.feat-descrips {
+  float: left;
+}
+
+.feat-proj-title-text {
+
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-size: 1.3em;
+}
+
+.project-description {
+
+  color: black;
+  font-size: 1em;
+}
 
 
 
@@ -108,11 +132,10 @@ footer#connect {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  border: 3px solid black;
 }
 
-.text {
-  float: left;
-}
+
 
 /* Hide the images by default */
 .mySlides {
@@ -127,7 +150,8 @@ footer#connect {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: red;
+  text-shadow: 1px 0 0 black;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -138,6 +162,7 @@ footer#connect {
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+
 }
 
 /* On hover, add a black background color with a little of bit see-through */
@@ -166,7 +191,7 @@ footer#connect {
 }
 
 /* The dots/bullets/indicators */
-.dot {
+/* .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -179,7 +204,7 @@ footer#connect {
 
 .active, .dot:hover {
   background-color: #717171;
-}
+} */
 
 /* Fading animation */
 .fade {

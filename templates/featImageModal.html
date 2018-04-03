@@ -1,13 +1,9 @@
 
-<div class="feat-image-modal">
-  <div class="modal-container">
+<div class="feat-image-modal" ng-keypress="$event.keyCode == 27 && imgCtrl.ok()">
   <div class="modal-body">
-    <img ng-src="{{imgCtrl.imagePath}}" style="width:80%" class="modal-img">
-    <!-- imgCtrl.imagePath<input type="text" ng-model="newRoom.newRoomInput" placeholder="Name your room" class="new-room-input" ng-keypress="$event.keyCode == 13 && newRoom.addRoom(newRoom.newRoomInput)" '/pomTimer/pomTimerBreak.png'> -->
+    <img ng-src="{{imgCtrl.imagePath}}" class="modal-img">
   </div>
   <div class="modal-footer">
-    <!-- <button class="btn btn-primary" type="button" ng-click="ok()">OK</button> -->
-    <button class="btn btn-warning" type="button" ng-click="imgCtrl.ok()">Close</button>
+    <button class="modal-close" type="button" ng-click="imgCtrl.ok()">X</button>
   </div>
-</div>
 </div>

@@ -15,7 +15,7 @@
 
       this.getCard = (cardVal) => {
           this.setDiv(Cards.giveCard(cardVal));
-          console.log(this.featImages);
+        
         }
 
 

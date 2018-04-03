@@ -57,14 +57,7 @@
     }
 
 
-    Cards.getCollection = function(numberOfAlbums) {
-      this.albumsCol = [];
-      for (var i = 0; i < numberOfAlbums; i++) {
-         this.albumsCol.push(albumPicasso);
-     }
-     return this.albumsCol;
-
-    }
+    
 
     return Cards;
   }
