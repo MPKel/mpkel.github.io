@@ -28,9 +28,7 @@
 .modal-close {
   height: 10px;
   width: 10px;
-  position: fixed;
-  top: 0px;
-  right: 10px;
+  float: right;
   background-color: red;
   color: white;
 }
