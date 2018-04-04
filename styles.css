@@ -95,10 +95,12 @@ h1 {
 
 .feat-descrips {
   float: left;
+  font-size: 1.1em;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .feat-proj-title-text {
-
+  font-family: 'Merriweather', serif;
   color: white;
   text-shadow: 1px 1px 1px black;
   font-size: 1.3em;

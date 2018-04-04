@@ -12,6 +12,7 @@
 
     <!--font awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans" rel="stylesheet">
 
     <!--custom styles -->
     <link rel="stylesheet" href="styles.css">
@@ -44,7 +45,8 @@
                 <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade" ng-repeat="img in home.featImages track by $index">
                   <div class="numbertext">{{img.id}}</div>
-                  <img ng-src="{{img.imgUrl}}" style="width:100%" class="feat-img" ng-click="modal.openModal(img.imgUrl)" ng-controller="ModalCtrl as modal" />
+                  <img ng-src="{{img.imgUrl}}" style="width:100%" class="feat-img" />
+                  <!-- ng-click="modal.openModal(img.imgUrl)" ng-controller="ModalCtrl as modal"  -->
                   <div class="text">{{img.description}}</div>
                 </div>
 
