@@ -14,14 +14,22 @@ $( document ).ready(function(){
     });
 
     $(".project").click(function(){
-      if(hidden){
-      $("#featured-main").slideDown("slow");
-      $("#featured-main").animate({opacity: '1'}, 'slow');
-      hidden = false;
-    }
+      $(".feat-descrips").css("display", "none");
+      $(".project-description").css("display", "none");
+      $(".project-hublink").css("display", "none");
 
-    var slideIndex = 1;
-    showSlides(slideIndex);
+      if(hidden){
+          $("#featured-main").slideDown("slow");
+          $("#featured-main").animate({opacity: '1'}, 'slow');
+          hidden = false;
+      }
+
+      $(".feat-descrips").fadeIn(1500);
+      $(".project-description").slideDown("slow");
+      $(".project-hublink").slideDown("slow");
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
     });
 
 });

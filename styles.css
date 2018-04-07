@@ -1,9 +1,13 @@
-* {box-sizing:border-box}
+* {
+    box-sizing:border-box;
+
+  }
 
 html{
-
+  height: 100%;
   background: url(images/background-image.jpg) center / cover;
   background-attachment: fixed;
+
 }
 
 
@@ -11,6 +15,10 @@ html{
 main {
   max-width: 900px;
   /* background-color: black; */
+}
+
+.mdl-layout__content,.mdl-grid {
+  overflow: hidden;
 }
 
 header#portfolio-header {
@@ -47,6 +55,7 @@ h1 {
 
 .showIt:hover {
   box-shadow: 2px 2px 2px black;
+  transform: scale(1.07);
 }
 
 #enter-btn {
@@ -94,9 +103,14 @@ h1 {
 }
 
 .feat-descrips {
+  display: none;
   float: left;
   font-size: 1.1em;
   font-family: 'PT Sans', sans-serif;
+  background-color: lightgray;
+  border-radius: 15px;
+  text-align:center;
+  padding: 10px;
 }
 
 .feat-proj-title-text {
@@ -110,6 +124,18 @@ h1 {
 
   color: black;
   font-size: 1em;
+}
+
+.project-hublink {
+  color: black;
+}
+
+.project-hublink:hover {
+  color: grey;
+}
+
+.mdl-card__media {
+  height: 30%;
 }
 
 
