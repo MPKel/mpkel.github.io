@@ -45,6 +45,7 @@ h1 {
 #featured-main {
   display: none;
   opacity: 0;
+  border-radius: 18px;
 }
 
 .hidden {
@@ -72,9 +73,7 @@ h1 {
   width: 60%;
 } */
 
-.project-description {
-  padding-left: 0;
-}
+
 
 .project img {
   width: 100%;
@@ -107,7 +106,7 @@ h1 {
   float: left;
   font-size: 1.1em;
   font-family: 'PT Sans', sans-serif;
-  background-color: lightgray;
+  background-color: white;
   border-radius: 15px;
   text-align:center;
   padding: 10px;
@@ -115,15 +114,15 @@ h1 {
 
 .feat-proj-title-text {
   font-family: 'Merriweather', serif;
-  color: white;
+  color: red;
   text-shadow: 1px 1px 1px black;
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 .project-description {
-
   color: black;
   font-size: 1em;
+  padding-left: 0;
 }
 
 .project-hublink {

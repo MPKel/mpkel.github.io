@@ -29,6 +29,7 @@ $( document ).ready(function(){
       $(".project-hublink").slideDown("slow");
 
       var slideIndex = 1;
+      plusSlides(0);
       showSlides(slideIndex);
     });
 
