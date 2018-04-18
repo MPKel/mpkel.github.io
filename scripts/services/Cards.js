@@ -14,7 +14,7 @@
 
     var pomTimer = {
        title: 'Pomodoro Timer',
-       description: 'App designed to icnrease productivity by utilizing the Pomodoro time management technique of alternating timed work sessions and breaks. Users receive alerts at the end of a session, and can add/remove and sort completed tasks. Created using AngularJS with FireBase.',
+       description: 'App designed to increase productivity by utilizing the Pomodoro time management technique of alternating timed work sessions and breaks. Users receive alerts at the end of a session, and can add/remove and sort completed tasks. Created using AngularJS with FireBase.',
        codeLink: 'bloctime',
        images: [
          { id: 1, description: 'break', imgUrl: 'images/pomTimer/pomTimerBreak.png' },
