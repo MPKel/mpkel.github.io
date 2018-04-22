@@ -35,7 +35,7 @@
 
     var blocipedia = {
        title: 'Blocipedia',
-       description: 'A Wikipedia clone created with Ruby on Rails. Implementing using test driven design.',
+       description: 'A Wikipedia clone created with Ruby on Rails. Implemented using test driven design.',
        codeLink: 'blocipedia',
        images: [
          { id: 1, description: 'Home Page', imgUrl: 'images/blocipedia/homePage.png' },
