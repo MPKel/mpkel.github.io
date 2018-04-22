@@ -23,6 +23,8 @@
 
   <body ng-controller="HomeCtrl as home">
 
+
+
     <header id="portfolio-header" class="mdl-layout__header mdl-layout__header--transparent">
       <h1>Michael Kelley</h1>
       <p id="slogan">Web Developer</p>
@@ -36,18 +38,24 @@
 
     <main class="mdl-layout__content mdl-grid hidden">
 
-      <div id="featured-main" class=" featured-project mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
+      <div id="featured-main" class="featured-project mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
          <div class="mdl-card__media mdl-cell mdl-cell--5-col mdl-cell--12-col-tablet ss-docket">
 
            <!-- Slideshow container -->
-              <div class="slideshow-container">
+              <div class="slideshow-container" ng-click="home.setCurrentImage(1)">
 
                 <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade" ng-repeat="img in home.featImages track by $index">
+                <div class="mySlides fade" ng-repeat="img in home.featImages track by $index" >
                   <div class="numbertext">{{img.id}}</div>
                   <img ng-src="{{img.imgUrl}}" style="width:100%" class="feat-img" />
                   <!-- ng-click="modal.openModal(img.imgUrl)" ng-controller="ModalCtrl as modal"  -->
-                  <div class="text">{{img.description}}</div>
+                  <div class="ss-text">{{img.description}}</div>
+                  <div class="modal">
+                     <h1 class="modal__title">{{img.description}}</h1>
+                     <img ng-src="{{img.imgUrl}}" style="width:100%" class="modal__image" />
+
+                 </div>
+                 <div class="backdrop"></div>
                 </div>
 
                 <!-- <div class="mySlides fade">
@@ -88,37 +96,37 @@
 
 
       <div class="project showIt mdl-cell mdl-card mdl-shadow--4dp" ng-click="home.getCard(1)">
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Pong</h2>
+        <div class="project__title">
+          <h2 class="project__title-text">Pong</h2>
         </div>
-        <div class="mdl-card__media">
+        <div class="project__image-container">
           <img src="images/pong/gameOver.png" alt="Pong: game over" />
         </div>
       </div>
 
       <div class="project showIt mdl-cell mdl-card mdl-shadow--4dp" ng-click="home.getCard(2)">
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Pomodoro Timer</h2>
+        <div class="project__title">
+          <h2 class="project__title-text">Pomodoro Timer</h2>
         </div>
-        <div class="mdl-card__media">
+        <div class="project__image-container">
           <img src="images/pomTimer/pomTimerBreak.png" alt="Pomodoro Timer"/>
         </div>
       </div>
 
       <div class="project showIt mdl-cell mdl-card mdl-shadow--4dp" ng-click="home.getCard(3)">
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Dragon Chat</h2>
+        <div class="project__title">
+          <h2 class="project__title-text">Dragon Chat</h2>
         </div>
-        <div class="mdl-card__media">
+        <div class="project__image-container">
           <img src="images/dragonChat/inRoomChat.png" alt="Dragon Chat" />
         </div>
       </div>
 
       <div class="project showIt mdl-cell mdl-card mdl-shadow--4dp" ng-click="home.getCard(4)">
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Blocipedia</h2>
+        <div class="project__title">
+          <h2 class="project__title-text">Blocipedia</h2>
         </div>
-        <div class="mdl-card__media">
+        <div class="project__image-container">
           <img src="images/blocipedia/wikisList.png" alt="Blocipedia Wiki Listing" />
         </div>
       </div>

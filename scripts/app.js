@@ -33,6 +33,31 @@ $( document ).ready(function(){
       showSlides(slideIndex);
     });
 
+    // $('.slideshow-container').click(function(){
+    //   $('.backdrop').addClass('open');
+    //   $('.modal').addClass('open');
+    //
+    // });
+
+    $('.slideshow-container').on('click', ".feat-img", function(){
+        $('.backdrop').addClass('open');
+        $('.modal').addClass('open');
+   });
+
+
+   $('.slideshow-container').on('click', ".backdrop", function(){
+       $('.backdrop').removeClass('open');
+       $('.modal').removeClass('open');
+  });
+
+    // $('.modal').click(function(){
+    //   $('.backdrop').removeClass('open');
+    //   $('.modal').removeClass('open');
+    //   console.log('hellooooo');
+    // });
+
+
+
 });
 
 
@@ -57,11 +82,13 @@ function showSlides(n) {
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
+      // slides[i].classList.add("close");
   }
   // for (i = 0; i < dots.length; i++) {
   //     dots[i].className = dots[i].className.replace(" active", "");
   // }
   slides[slideIndex-1].style.display = "block";
+  // slides[slideIndex-1].classList.remove("close");
   // dots[slideIndex-1].className += " active";
 }
 

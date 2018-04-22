@@ -5,6 +5,7 @@
       this.featDescription = '';
       this.featImages = {};
       this.hubLink = '';
+      this.currentImage = "";
 
 
       this.setDiv = (object) => {
@@ -21,6 +22,11 @@
         }
 
 
+      }
+
+      this.setCurrentImage = (imageInfo) => {
+        this.currentImage = imageInfo;
+        console.log(this.currentImage);
       }
 
 
