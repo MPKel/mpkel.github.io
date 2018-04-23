@@ -136,7 +136,7 @@ h1 {
   padding: 16px;
   text-align: center;
   vertical-align: middle;
-  background: rgba(14, 123, 232, 0.83);
+  background: rgba(53, 53, 53, 0.9);
   border: 2px solid black;
   border-radius: 8px;
   height: 400px;
@@ -182,12 +182,11 @@ h1 {
 
 .feat-descrips {
   display: none;
-  float: left;
+  float: right;
   font-size: 1.1em;
   font-family: 'PT Sans', sans-serif;
-  background-color: white;
   border-radius: 15px;
-  text-align:center;
+  text-align: center;
   padding: 10px;
 }
 
@@ -196,16 +195,23 @@ h1 {
   color: red;
   text-shadow: 1px 1px 1px black;
   font-size: 1.5em;
+  margin-left: 40%;
 }
 
 .project-description {
   color: black;
-  font-size: 1em;
-  padding-left: 0;
+  background: white;
+  font-size: 1.2em;
+  border-radius: 8px;
+  padding-left: 3px;
+  line-height: 1.1em;
+  border: 2px solid red;
+  box-shadow: 2px 2px 2px 2px gray inset;
 }
 
 .project-hublink {
   color: black;
+  margin-left: 40%;
 }
 
 .project-hublink:hover {
