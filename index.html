@@ -48,7 +48,6 @@
                 <div class="mySlides fade" ng-repeat="img in home.featImages track by $index" >
                   <div class="numbertext">{{img.id}}</div>
                   <img ng-src="{{img.imgUrl}}" style="width:100%" class="feat-img" />
-                  <!-- ng-click="modal.openModal(img.imgUrl)" ng-controller="ModalCtrl as modal"  -->
                   <div class="ss-text">{{img.description}}</div>
                   <div class="modal">
                      <h1 class="modal__title">{{img.description}}</h1>
@@ -173,7 +172,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/HomeCtrl.js"></script>
-    <script src="scripts/controllers/ModalCtrl.js"></script>
     <script src="scripts/services/Cards.js"></script>
   </body>
 </html>
