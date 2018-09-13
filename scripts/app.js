@@ -18,7 +18,7 @@ $( document ).ready(function(){
       $(".feat-descrips").css("display", "none");
       $(".project-description").css("display", "none");
       $(".project-hublink").css("display", "none");
-      $(".project-gallery__zone").css("box-shadow", "3px 3px 3px 4px rgba(0,0,0,0.75)").css("background", "rgba(150,185,250,1)");
+      $(".project-gallery__zone").css("box-shadow", "3px 3px 3px 4px rgba(0,0,0,0.75)").css("background", "rgba(143,153,168,0.65)");
 
             // DISPLAY MAIN PROJECT AREA
       if(hidden){
