@@ -48,7 +48,7 @@ $( document ).ready(function(){
       // CLOSE MAIN PROJECT AREA
       $('#close-main').click(function(){
         $("#featured-main").fadeOut(600, "swing", function(){
-          $(".project-gallery__zone").css("box-shadow", "5px 5px 5px 5px rgba(0,0,0,0)").css("background", "rgba(255,255,255,1)");
+          $(".project-gallery__zone").css("box-shadow", "5px 5px 5px 5px rgba(0,0,0,0)").css("background", "rgba(255,255,255,0.65)");
           $(".card-row").fadeIn("slow");
           hidden = true;
         });
