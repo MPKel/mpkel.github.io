@@ -26,10 +26,8 @@
 
       this.setCurrentImage = (imageInfo) => {
         this.currentImage = imageInfo;
-        console.log(this.currentImage);
+        // console.log(this.currentImage);
       }
-
-
 
 
 

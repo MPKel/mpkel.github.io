@@ -44,6 +44,39 @@
        ]
     };
 
+    var uie1 = {
+       title: 'UIE Design challenge 1',
+       description: 'This project was part of a design challenge for selection as a Front End Web Development Intern At User Interface Engineering. The task was to capture the look and feel of the company\'s 2015 conference site while maintaining the layout of the company\'s 2014 conference site.',
+       codeLink: 'uie-mi-challenge',
+       images: [
+         { id: 1, description: 'Home View', imgUrl: 'images/uie1/mainss-1.png' },
+         { id: 2, description: 'Mobile View 1', imgUrl: 'images/uie1/mobile1.png' },
+         { id: 3, description: 'Mobile View 2', imgUrl: 'images/uie1/present.png' }
+       ]
+    };
+
+    var uie2 = {
+       title: 'UIE Design challenge 2',
+       description: 'This project was part of a design challenge for selection as a Front End Web Development Intern At User Interface Engineering. The task was to design an entirely new landing page while maintaining the look and feel of the company\'s 2015 conference site.',
+       codeLink: 'uie-custom-challenge',
+       images: [
+         { id: 1, description: 'Home View', imgUrl: 'images/uie2/mainss-1.png' },
+         { id: 2, description: 'Home View 2', imgUrl: 'images/uie2/mainss-2.png' },
+         { id: 3, description: 'Mobile View', imgUrl: 'images/uie2/mobile1.png' }
+       ]
+    };
+
+    var uieEmail = {
+       title: 'Team Discussions Email campaign',
+       description: 'This was an email campaign designed from scratch to highlight team focused discussion points for video seminars. 27 design iterations were presented to management team.',
+       codeLink: 'uie-custom-challenge',
+       images: [
+         { id: 1, description: 'Email mockup 1', imgUrl: 'images/uieEmail/mainss-1.png' },
+         { id: 2, description: 'Email mockup 2', imgUrl: 'images/uieEmail/mainss-2.png' },
+         { id: 3, description: 'Email mockup 3', imgUrl: 'images/uieEmail/mainss-3.png' }
+       ]
+    };
+
 
     Cards.giveCard = function(value) {
       if (value == 1){
@@ -57,6 +90,15 @@
       }
       else if(value == 4){
         return blocipedia;
+      }
+      else if(value == 5){
+        return uie1;
+      }
+      else if(value == 6){
+        return uie2;
+      }
+      else if(value == 7){
+        return uieEmail;
       }
     }
 
