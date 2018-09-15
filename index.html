@@ -143,14 +143,14 @@
       <!-- ******************************* -->
       <div id="featured-main" class="container-fluid py-3 my-5">
 
-         <div class="container mx-auto">
+         <div class="container mx-auto px-0">
            <button type="button" id="close-main" class="btn btn-danger" aria-label="Close">
              <span aria-hidden="true">&times;</span>
            </button>
            <!-- Slideshow container -->
               <div class="slideshow-container row" ng-click="home.setCurrentImage(1)" >
 
-                <div id="projectCarousel" class="carousel slide mx-auto" data-ride="carousel">
+                <div id="projectCarousel" class="carousel col-md-10 slide mx-auto" data-ride="carousel">
                       <ol class="carousel-indicators">
                         <li data-target="#projectCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#projectCarousel" data-slide-to="1"></li>
@@ -177,13 +177,20 @@
                         <span class="sr-only">Next</span>
                       </a>
                     </div>
+                    <div class="col-md-2">
+                    </div>
               </div>
               <!-- END SLDIESHOW CONTAINER -->
 
 
-              <div class="container feat-descrips row mx-auto">
-                 <h2 class="feat-proj-title-text">{{home.featTitle}} </h2>
-                 <p class="project-description py-5 mx-auto">{{home.featDescription}}</p>
+              <div class="container feat-descrips row ">
+                 <h2 class="feat-proj-title-text col-md-4">{{home.featTitle}} </h2>
+                 <div class="col-md-8"></div>
+               </div>
+               <div class="row">
+                 <div class="col-md-2">
+                 </div>
+                 <p class="project-description col-md-10">{{home.featDescription}}</p>
                  <a ng-href="https://github.com/MPKel/{{home.hubLink}}" class="project-hublink" target="_blank">View the source code</a>
               </div>
 
