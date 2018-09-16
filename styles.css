@@ -116,7 +116,7 @@ h1 {
 .project-gallery__zone{
   margin-top: 3rem;
   border-radius: 8px;
-  /* background: rgba(255,255,255,0.65); */
+  transition: background .5s;
   padding: 0;
 }
 

@@ -8,7 +8,9 @@ $( document ).ready(function(){
       //slide up header
       $("#portfolio-header").fadeOut(500, "swing", function() {
         //un-hide main section
-        $("main").fadeIn(1200, "swing");
+        $("main").fadeIn(1200, "swing", function() {
+          $(".project-gallery__zone").css("background", "rgba(0,0,0,0.5)");
+        });
       });
 
 
@@ -32,12 +34,12 @@ $( document ).ready(function(){
             // DISPLAY MAIN PROJECT AREA
       if(hidden){
         $(".card-row").fadeOut(300, function(){
-          $("#featured-main").fadeIn(1500, "swing", function(){
+          $("#featured-main").fadeIn(1200, "swing", function(){
+            $(".feat-descrips").fadeIn(200);
             $('.feat-img__container').animate({
               height: '300px',
               width: '300px'
-            }, 1500);
-            $(".feat-descrips").slideDown(900);
+            }, 1700);
           });
         });
 
@@ -47,18 +49,23 @@ $( document ).ready(function(){
           hidden = false;
       }
 
-      $(".feat-descrips").fadeIn("slow");
-      $(".project-description").slideDown("slow");
-      $(".project-hublink").slideDown("slow");
+      $(".feat-descrips").fadeIn(400, function() {
+        $(".project-description").fadeIn(200, function() {
+          $(".project-hublink").slideDown(400);
+        });
+      });
+
+
 
 
 
 
       // CLOSE MAIN PROJECT AREA
       $('#close-main').click(function(){
-        $("#featured-main").fadeOut(600, "swing", function(){
-          $(".project-gallery__zone").css("box-shadow", "5px 5px 5px 5px rgba(0,0,0,0)").css("background", "rgba(255,255,255,0)");
-          $(".card-row").fadeIn("slow");
+        $("#featured-main").fadeOut(300, function(){
+          $(".card-row").fadeIn(500);
+          $(".project-gallery__zone").css("box-shadow", "5px 5px 5px 5px rgba(0,0,0,0)").css("background", "rgba(0,0,0,0.5)");
+
           hidden = true;
         });
 
