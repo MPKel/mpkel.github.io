@@ -5,21 +5,21 @@
 
 html{
   height: 100%;
-  background: url(images/background-image.jpg) center / cover;
-  background-attachment: fixed;
+  /* background: url(images/background-image.jpg) center / cover;
+  background-attachment: fixed; */
 
 }
 
  body {
-   background: rgba(0,0,0,0);
+   /* background: rgba(0,0,0,0); */
+   background: url(images/jeremy-perkins-271697-unsplash.jpg) center / cover;
+
+   /* filter: blur(20px); */
    /* background: url(images/background-image.jpg) center / cover; */
  }
 
 main {
-  /* position: fixed;
-  top: 0%;
-  left: 0%;
-  width: 100%; */
+  display: none;
   max-width: 900px;
   /* background-color: black; */
 }
@@ -27,7 +27,7 @@ main {
 
 header#portfolio-header {
   /*Photo by adrian on Unsplash*/
-  height: 100vh;
+  height: 50vh;
   justify-content: center;
   text-align: center;
   color: white;
@@ -36,7 +36,9 @@ header#portfolio-header {
 
 #portfolio-header h1 {
   margin-top: 5rem;
+  color: white;
 }
+
 .backdrop {
   position: fixed;
   display: none;
@@ -81,7 +83,8 @@ h1 {
 }
 
 #slogan {
-  color: hsla(120, 3%, 16%, 0.65);
+  color: white;
+  /* color: hsla(120, 3%, 16%, 0.65); */
   font-weight: lighter;
   font-size: 2.6rem;
 }
@@ -96,22 +99,69 @@ h1 {
 
 
 #enter-btn {
-  left: 45%;
   padding: 10px 25px;
   color: white;
-  text-shadow: 1px 2px 2px black;
+  background-color: rgba(0,253,58,1);
+  text-shadow: 0 0 0 black;
   text-align: center;
   justify-content: center;
+  transition: text-shadow: 1s;
+}
+
+#enter-btn:hover {
+  text-shadow: 1px 2px 2px black;
 }
 
 
 .project-gallery__zone{
   margin-top: 3rem;
   border-radius: 8px;
-  background: rgba(255,255,255,0.65);
+  /* background: rgba(255,255,255,0.65); */
   padding: 0;
 }
 
+
+.card-row-1 {
+  margin-bottom: 6rem;
+}
+
+
+.card1::after{
+  content: " -May 2018-";
+  color: rgba(0,253,58,1);
+  margin-top: .2rem;
+
+}
+
+.card2::after{
+  content: "-May 2018-";
+  color: rgba(0,253,58,1);
+  margin-top: .2rem;
+}
+
+.card3::after{
+  content: "-July 2018-";
+  color: rgba(0,253,58,1);
+  margin-top: .2rem;
+}
+
+.card4::after{
+  content: "-March 2018-";
+  color: rgba(0,253,58,1);
+  margin-top: .2rem;
+}
+
+.card5::after{
+  content: "-Feb 2018-";
+  color: rgba(0,253,58,1);
+  margin-top: .2rem;
+}
+
+.card6::after{
+  content: "-Dec 2017-";
+  color: rgba(0,253,58,1);
+  margin-top: .2rem;
+}
 
 
 .project {
@@ -149,12 +199,16 @@ h1 {
   border-radius: 9px;
   border: 2px solid rgba(157,161,165,0.8);
   box-shadow: 2px 2px 2px rgba(0,0,0,0.7);
-  transition: box-shadow 1s ease, transform .5s ease;
+  transition: box-shadow 1s ease, transform .5s ease, filter .5s ease;
+  -webkit-filter: opacity(0);
+  filter: opacity(0);
 }
 
 .project__image-container img:hover{
   box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.7);
   transform: scale(1.05,1.05);
+  -webkit-filter: opacity(1);
+  filter: opacity(1);
 }
 
 .project__title {
@@ -165,12 +219,13 @@ h1 {
 
 .project__title-text {
   text-align: center;
-  font-size: 1rem;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: red;
-  /* text-shadow: 1px 1px 1px black; */
+  font-size: 1.3rem;
+  font-family: 'Karma', serif;
+  font-weight: bold;
+  color: rgba(0,253,58,1);
   padding: 0;
   margin: 0;
+  margin-top: .55rem;
 
 }
 
@@ -178,10 +233,10 @@ h1 {
 
 
 #featured-main {
-  background: linear-gradient(rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0));
+  /* background: linear-gradient(rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0)); */
   display: none;
   opacity: 1;
-  padding: 0;
+  padding: .5rem;
   border-radius: 8px;
   overflow: visible;
   z-index: 2200;
@@ -201,8 +256,9 @@ h1 {
 #close-main {
   font-size: 1rem;
   text-shadow: 1px 1px 1px black;
-  margin: 1rem;
+  margin: .5rem;
   box-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+  text-align: right;
 }
 
 #close-main:hover {
@@ -217,7 +273,7 @@ h1 {
 /* Slideshow container */
 .slideshow-container {
   max-width: 800px;
-  position: relative;
+  /* position: relative; */
   margin: auto;
   border-radius: 8px;
 
@@ -232,14 +288,14 @@ h1 {
   height: 500px;
   width: 550px;
   border-radius: 8px;
-  border: 5px solid white;
+  border: 20px solid black
+  padding: 0;
 }
 
 .feat-img {
   width: 100%;
   height: 100%;
   border-radius: 8px;
-  border: 5px solid rgba(0,0,0,0.1);
 }
 
 .ss-docket {
@@ -250,21 +306,21 @@ h1 {
 
 .feat-descrips {
   display: none;
-  font-size: 1.1rem;
-  font-family: 'Source Sans Pro', sans-serif;
-  border-radius: 15px;
+  font-family: 'Karma', serif;
   text-align: center;
   padding: 10px;
 }
 
 .feat-proj-title-text {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.5rem;
-  margin-left: 40%;
+  font-family: 'Karma', serif;
+  font-size: 1.985rem;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-weight: bold;
 }
 
 .project-description {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Karma', serif;
   text-align: left;
   background: rgba(255,255,255,1);
   font-size: 1.1em;
@@ -273,8 +329,9 @@ h1 {
   max-width: 700px;
   /* padding-left: 3px; */
   line-height: 1.1em;
+  /* color: white; */
   /* border: 2px solid red; */
-  /* box-shadow: 3px 3px 3px 3px gray inset; */
+  box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.3);
 }
 
 .project-hublink {
@@ -420,7 +477,7 @@ footer#connect {
   }
 
   .feat-descrips {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Karma', serif;
     border-radius: 8px;
     text-align: center;
     padding: 3px;

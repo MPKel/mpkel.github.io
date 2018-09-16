@@ -15,7 +15,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Portfolio | Michael Kelley</title>
+    <title>Michael Kelley</title>
 
 
 
@@ -25,7 +25,8 @@
 
     <!--font awesome -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather|Source+Sans+Pro|PT+Sans" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Karma:400,700" rel="stylesheet">
 
     <!--custom styles -->
     <link rel="stylesheet" href="styles.css">
@@ -38,11 +39,11 @@
 
 
 
-    <header id="portfolio-header" class "container-fluid">
+    <header id="portfolio-header" class "container-fluid my-auto">
       <div class="container-fixed mx-auto my-7">
         <h1>Michael Kelley</h1>
         <p id="slogan">Web Developer</p>
-        <button id="enter-btn" class="btn btn-success">ENTER</button>
+        <button id="enter-btn" class="btn">ENTER</button>
       <div>
     </header>
 
@@ -51,43 +52,43 @@
 
 
 
-    <main class="container-fluid d-none">
+    <main class="container-fluid">
 
 
 
 
-    <div class="container project-gallery__zone mx-auto">
+    <div class="container project-gallery__zone mx-auto mt-5">
     <!--ROW 1 START -->
-    <div class="row my-1 card-row ">
+    <div class="row card-row card-row-1 ">
 
       <!-- CARD 1 -->
-      <div class="project showIt col-md-3 mx-auto mt-3" ng-click="home.getCard(5)" ng-mouseover="imgBorder1={border:'2px solid steelblue'}" ng-mouseleave="imgBorder1={}">
-          <div class="project__image-container mx-auto mt-4">
+      <div class="project showIt col-md-3 mx-auto" ng-click="home.getCard(5)" ng-mouseover="imgBorder1={border:'2px solid rgba(0,253,58,1)'}" ng-mouseleave="imgBorder1={}">
+          <div class="project__image-container mx-auto">
             <img src="images/uie1/mainss-1.png" alt="Conference Home Screen" ng-style="imgBorder1"/>
           </div>
-          <div class="project__title mt-4">
-            <h2 class="project__title-text">UIE Design challenge 1</h2>
+          <div class="project__title mt-4 card1">
+            <h2 class="project__title-text">UIE Design challenge:&nbsp;1</h2>
           </div>
       </div>
 
       <!-- CARD 2 -->
 
-      <div class="project showIt col-md-3 mx-auto my-3" ng-click="home.getCard(6)" ng-mouseover="imgBorder2={border:'2px solid steelblue'}" ng-mouseleave="imgBorder2={}">
-        <div class="project__image-container mx-auto mt-4">
+      <div class="project showIt col-md-3 mx-auto" ng-click="home.getCard(6)" ng-mouseover="imgBorder2={border:'2px solid rgba(0,253,58,1)'}" ng-mouseleave="imgBorder2={}">
+        <div class="project__image-container mx-auto">
           <img src="images/uie2/mainss-1.png" alt="UIE Design Challenge 2" ng-style="imgBorder2"/>
         </div>
-        <div class="project__title mt-4">
-          <h2 class="project__title-text">UIE Design Challenge 2</h2>
+        <div class="project__title mt-4 card2">
+          <h2 class="project__title-text"><strong>UIE Design Challenge:&nbsp;2</strong></h2>
         </div>
       </div>
 
       <!-- CARD 3 -->
-      <div class="project showIt col-md-3 mx-auto my-3" ng-click="home.getCard(7)" ng-mouseover="imgBorder3={border:'2px solid steelblue'}" ng-mouseleave="imgBorder3={}">
-        <div class="project__image-container mx-auto mt-4">
+      <div class="project showIt col-md-3 mx-auto" ng-click="home.getCard(7)" ng-mouseover="imgBorder3={border:'2px solid rgba(0,253,58,1)'}" ng-mouseleave="imgBorder3={}">
+        <div class="project__image-container mx-auto">
           <img src="images/uieEmail/mainss-1.png" alt="UIE email design" ng-style="imgBorder3"/>
         </div>
-        <div class="project__title mt-4">
-          <h2 class="project__title-text">Team Discussions Email campaign</h2>
+        <div class="project__title mt-4 card3">
+          <h2 class="project__title-text">Team Discussions Email&nbsp;campaign</h2>
         </div>
       </div>
 
@@ -101,35 +102,35 @@
 
 
     <!--ROW 2 START -->
-      <div class="row my-1 card-row">
+      <div class="row card-row">
 
         <!-- CARD 4 -->
-        <div class="project showIt col-md-3 mx-auto mt-3" ng-click="home.getCard(1)" ng-mouseover="imgBorder4={border:'2px solid steelblue'}" ng-mouseleave="imgBorder4={}">
-            <div class="project__image-container mx-auto mt-4">
+        <div class="project showIt col-md-3 mx-auto" ng-click="home.getCard(1)" ng-mouseover="imgBorder4={border:'2px solid rgba(0,253,58,1)'}" ng-mouseleave="imgBorder4={}">
+            <div class="project__image-container mx-auto">
               <img src="images/pong/gameOver.png" alt="Pong: game over" ng-style="imgBorder4"/>
             </div>
-            <div class="project__title mt-4">
+            <div class="project__title mt-4 card4">
               <h2 class="project__title-text">Pong</h2>
             </div>
         </div>
 
         <!-- CARD 5 -->
 
-        <div class="project showIt col-md-3 mx-auto my-3" ng-click="home.getCard(2)"ng-mouseover="imgBorder5={border:'2px solid steelblue'}" ng-mouseleave="imgBorder5={}">
-          <div class="project__image-container mx-auto mt-4">
+        <div class="project showIt col-md-3 mx-auto" ng-click="home.getCard(2)"ng-mouseover="imgBorder5={border:'2px solid rgba(0,253,58,1)'}" ng-mouseleave="imgBorder5={}">
+          <div class="project__image-container mx-auto">
             <img src="images/pomTimer/pomTimerBreak.png" alt="Pomodoro Timer" ng-style="imgBorder5"/>
           </div>
-          <div class="project__title mt-4">
+          <div class="project__title mt-4 card5">
             <h2 class="project__title-text">Pomodoro Timer</h2>
           </div>
         </div>
 
         <!-- CARD 6 -->
-        <div class="project showIt col-md-3 mx-auto my-3" ng-click="home.getCard(3)" ng-mouseover="imgBorder6={border:'2px solid steelblue'}" ng-mouseleave="imgBorder6={}">
-          <div class="project__image-container mx-auto mt-4">
+        <div class="project showIt col-md-3 mx-auto" ng-click="home.getCard(3)" ng-mouseover="imgBorder6={border:'2px solid rgba(0,253,58,1)'}" ng-mouseleave="imgBorder6={}">
+          <div class="project__image-container mx-auto">
             <img src="images/dragonChat/inRoomChat.png" alt="Dragon Chat" ng-style="imgBorder6"/>
           </div>
-          <div class="project__title mt-4">
+          <div class="project__title mt-4 card6">
             <h2 class="project__title-text">Dragon Chat</h2>
           </div>
         </div>
@@ -142,11 +143,15 @@
           <!-- FEATURED SECTION BEGIN -->
       <!-- ******************************* -->
       <div id="featured-main" class="container-fluid py-3 my-5">
+        <button type="button" id="close-main" class="btn btn-danger" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
 
          <div class="container mx-auto px-0">
-           <button type="button" id="close-main" class="btn btn-danger" aria-label="Close">
-             <span aria-hidden="true">&times;</span>
-           </button>
+           <div class="container feat-descrips row ">
+              <h2 class="feat-proj-title-text col-md-8">{{home.featTitle}} </h2>
+              <div class="col-md-8"></div>
+            </div>
            <!-- Slideshow container -->
               <div class="slideshow-container row" ng-click="home.setCurrentImage(1)" >
 
@@ -177,20 +182,14 @@
                         <span class="sr-only">Next</span>
                       </a>
                     </div>
-                    <div class="col-md-2">
-                    </div>
+
               </div>
               <!-- END SLDIESHOW CONTAINER -->
 
 
-              <div class="container feat-descrips row ">
-                 <h2 class="feat-proj-title-text col-md-4">{{home.featTitle}} </h2>
-                 <div class="col-md-8"></div>
-               </div>
-               <div class="row">
-                 <div class="col-md-2">
-                 </div>
-                 <p class="project-description col-md-10">{{home.featDescription}}</p>
+
+               <div class="row p-4">
+                 <p class="project-description col-md-10 mx-auto">{{home.featDescription}}</p>
                  <a ng-href="https://github.com/MPKel/{{home.hubLink}}" class="project-hublink" target="_blank">View the source code</a>
               </div>
 
@@ -215,7 +214,7 @@
       <!-- <div class="row my-2 card-row"> -->
 
         <!-- CARD 7 -->
-        <!-- <div class="project showIt col-md-3 mx-auto my-3" ng-click="home.getCard(7)" ng-mouseover="imgBorder7={border:'2px solid steelblue'}" ng-mouseleave="imgBorder7={}">
+        <!-- <div class="project showIt col-md-3 mx-auto my-3" ng-click="home.getCard(7)" ng-mouseover="imgBorder7={border:'2px solid rgba(0,253,58,1)'}" ng-mouseleave="imgBorder7={}">
           <div class="project__image-container mx-auto mt-4">
             <img src="images/dragonChat/inRoomChat.png" alt="Dragon Chat" ng-style="imgBorder7"/>
           </div>
@@ -225,7 +224,7 @@
         </div> -->
 
         <!-- CARD 8 -->
-        <!-- <div class="project showIt col-md-3 mx-auto my-3" ng-click="home.getCard(8)" ng-mouseover="imgBorder8={border:'2px solid steelblue'}" ng-mouseleave="imgBorder8={}">
+        <!-- <div class="project showIt col-md-3 mx-auto my-3" ng-click="home.getCard(8)" ng-mouseover="imgBorder8={border:'2px solid rgba(0,253,58,1)'}" ng-mouseleave="imgBorder8={}">
           <div class="project__image-container mx-auto mt-4">
             <img class="img-fluid" max-width="100%" height="auto" src="images/blocipedia/wikisList.png" alt="Blocipedia Wiki Listing" ng-style="imgBorder8"/>
           </div>
@@ -235,7 +234,7 @@
         </div> -->
 
         <!-- CARD 9 -->
-        <!-- <div class="project showIt col-md-3 mx-auto my-3" ng-click="home.getCard(9)" ng-mouseover="imgBorder9={border:'2px solid steelblue'}" ng-mouseleave="imgBorder9={}">
+        <!-- <div class="project showIt col-md-3 mx-auto my-3" ng-click="home.getCard(9)" ng-mouseover="imgBorder9={border:'2px solid rgba(0,253,58,1)'}" ng-mouseleave="imgBorder9={}">
           <a href="#feature-main">
             <div class="project__image-container mx-auto mt-4">
               <img class="img-fluid img-thumbnail" max-width="100%" height="auto" src="images/blocipedia/wikisList.png" alt="Blocipedia Wiki Listing" ng-style="imgBorder9"/>
