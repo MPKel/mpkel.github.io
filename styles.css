@@ -35,8 +35,12 @@ header#portfolio-header {
 }
 
 #portfolio-header h1 {
-  margin-top: 5rem;
+  margin-top: 3rem;
   color: white;
+}
+
+.name-fancy {
+  color: rgba(0,253,58,1);
 }
 
 .backdrop {
@@ -103,10 +107,8 @@ h1 {
 }
 
 #enter-btn {
-  position: fixed;
-  left: 2%;
-  top: 3%;
   padding: 10px 25px;
+  margin-top: 2rem;
   color: white;
   background-color: rgba(0,253,58,1);
   text-shadow: 0 0 0 black;
