@@ -97,19 +97,32 @@ h1 {
 }
 
 
+@keyframes enterHver {
+    from {background-color: rgba(0,253,58,1);}
+    to {background-color: rgba(0,253,58,0.0);}
+}
 
 #enter-btn {
+  position: fixed;
+  left: 2%;
+  top: 3%;
   padding: 10px 25px;
   color: white;
   background-color: rgba(0,253,58,1);
   text-shadow: 0 0 0 black;
   text-align: center;
   justify-content: center;
-  transition: text-shadow: 1s;
+  animation-name: enterHver;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
+
+
 
 #enter-btn:hover {
   text-shadow: 1px 2px 2px black;
+  background-color: rgba(0,253,58,1);
 }
 
 
@@ -122,7 +135,7 @@ h1 {
 
 
 .card-row-1 {
-  margin-bottom: 6rem;
+  margin-bottom: 7rem;
 }
 
 
@@ -324,14 +337,7 @@ h1 {
   text-align: left;
   background: rgba(255,255,255,1);
   font-size: 1.1em;
-  border-radius: 8px;
-  padding: .5rem;
-  max-width: 700px;
-  /* padding-left: 3px; */
-  line-height: 1.1em;
-  /* color: white; */
-  /* border: 2px solid red; */
-  box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.3);
+  padding: 1rem;
 }
 
 .project-hublink {
@@ -468,6 +474,26 @@ footer#connect {
 
 
 
+
+
+@media screen and (max-width: 450px) {
+  .feat-img-container {
+    height: 300px;
+    width: 250px;
+    border-radius: 8px;
+    border: 3px solid white;
+  }
+
+  .project img {
+      filter: opacity(1);
+  }
+
+  .card-row-1 {
+    margin-bottom: .35rem;
+  }
+
+}
+
 @media screen and (max-width: 773px) {
   .feat-img-container {
     height: 300px;
@@ -484,18 +510,8 @@ footer#connect {
   }
   .project-description {
     font-size: 1.2rem;
-    border-radius: 8px;
-    padding-left: 3px;
-    box-shadow: 3px 3px 3px 3px gray inset;
+    line-height: 140%;
+    /* border-radius: 8px; */
+    padding: 1.125rem;
   }
-}
-
-@media screen and (max-width: 450px) {
-  .feat-img-container {
-    height: 300px;
-    width: 250px;
-    border-radius: 8px;
-    border: 3px solid white;
-  }
-
 }

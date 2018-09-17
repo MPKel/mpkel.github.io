@@ -43,8 +43,8 @@
       <div class="container-fixed mx-auto my-7">
         <h1>Michael Kelley</h1>
         <p id="slogan">Web Developer</p>
-        <button id="enter-btn" class="btn">ENTER</button>
       <div>
+        <button id="enter-btn" class="btn">ENTER</button>
     </header>
 
 
@@ -142,16 +142,13 @@
       <!-- ******************************* -->
           <!-- FEATURED SECTION BEGIN -->
       <!-- ******************************* -->
-      <div id="featured-main" class="container-fluid py-3 my-5">
+      <div id="featured-main" class="container-fluid p-3 my-5">
         <button type="button" id="close-main" class="btn btn-danger" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
 
          <div class="container mx-auto px-0">
-           <div class="container feat-descrips row ">
-              <h2 class="feat-proj-title-text col-md-8">{{home.featTitle}} </h2>
-              <div class="col-md-4"></div>
-            </div>
+
            <!-- Slideshow container -->
               <div class="slideshow-container row" ng-click="home.setCurrentImage(1)" >
 
@@ -186,10 +183,14 @@
               </div>
               <!-- END SLDIESHOW CONTAINER -->
 
+              <div class="container feat-descrips row ">
+                 <h2 class="feat-proj-title-text col-md-8">{{home.featTitle}} </h2>
+                 <div class="col-md-4"></div>
+               </div>
 
 
-               <div class="row p-4">
-                 <p class="project-description col-md-10 mx-auto">{{home.featDescription}}</p>
+               <div class="row">
+                 <p class="project-description col-md-12 mx-auto container-fluid">{{home.featDescription}}</p>
                  <a ng-href="https://github.com/MPKel/{{home.hubLink}}" class="project-hublink" target="_blank">View the source code</a>
               </div>
 
